@@ -1,8 +1,17 @@
+# Author: Aidan DeBrae
+# The purpose of this program is to return particle information 
+# based on type and particle number. 
+
 import numpy as np
 import astropy.units as u
 from ReadFile import Read
 
 def ParticleInfo(filename, type, number):
+    # This function returns the mass and 3D distance/velocity values.
+    # Inputs: filename (str of data file); type (float denoting particle type); 
+    #         number (integer which denotes the particle number based on index)
+    # Returns: 3D distance (kpc); 3D velocity (km/s); mass (Solar Masses)
+    
     time, total_particles, data = Read(filename)
     particle_index = np.where(data['type'] == type)
     particles = data[particle_index]

@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={150mm,257mm},
+ left=30mm,
+ top=10mm,
+ }
+
+\usepackage{tabularx}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand\thesubsection{\arabic{subsection}}
+
+\title{Astro400B HW3}
+\author{Aidan Patrick DeBrae}
+
+\begin{document}
+
+\maketitle
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
+ \hline
+ \multicolumn{6}{|c|}{Galaxy Mass Components} \\
+ \hline
+ Galaxy & Halo ($10^{12} M_\odot$) & Disk ($10^{12} M_\odot$) & Bulge ($10^{12} M_\odot$) & Total ($10^{12} M_\odot$) & $f_{bar}$ \\
+ \hline
+ MW & 1.975 & 0.075 & 0.01 & 2.06 & 0.041 \\
+ M31 & 1.921 & 0.12 & 0.019 & 2.06 & 0.068 \\
+ M33 & 0.187 & 0.009 & N/A & 0.196 & 0.047 \\
+ Local Group & 4.083 & 0.204 & 0.029 & 4.316 & 0.054 \\
+ \hline
+\end{tabularx}
+
+\vspace{3mm}
+\section*{Questions}
+\vspace{1mm}
+\subsection{How does the total mass of the MW and M31 compare in this simulation? What galaxy component dominates this total mass?}
+\hspace{10mm} In this simulation, the total mass of the MW and M31 are the same. The component which dominates in both galaxies is the Halo mass as shown by the table above. 
+\vspace{1mm}
+\subsection{How does the stellar mass of the MW and M31 compare? Which galaxy do you expect to be more luminous?}
+\hspace{10mm} M31 has a stellar mass that is $\sim 0.054\times10^{12}$ \(M_\odot\) larger than the MW stellar mass. Because it has a larger stellar mass, I would expect M31 to be more luminous.
+\vspace{1mm}
+\subsection{How does the total dark matter mass of MW and M31 compare in this simulation (ratio)? Is this surprising, given their difference in stellar mass?}
+\hspace{10mm} The total dark matter masses are very similar with the MW having a slightly larger mass. The ratio of halo masses indicates that MW contains approximately 1.028 times more dark matter in total. It is surprising MW has a larger mass of dark matter considering M31 has a larger stellar mass. My initial conclusions would have been that a larger stellar mass corresponds to a larger halo mass. It seems that halo mass is  not correlated to stellar mass.
+\vspace{1mm}
+\subsection{In the Universe, $\Omega_b/\Omega_m \sim 16\%$ of all mass is locked up in baryons (gas \& stars) vs. dark matter. How does this ratio compare to the baryon fraction you computed for each galaxy? Given that the total gas mass in the disks of these galaxies is negligible compared to the stellar mass, any ideas for why the universal baryon fraction might differ from that in these galaxies?}
+\hspace{10mm} The baryon fraction for each galaxy and the Local Group can be found in the table displayed above. The baryon ratios for each galaxy are smaller than the total universal ratio. This implies that there is a larger ratio of dark matter for individual galaxies. The discrepancy likely arises from the difference in density between the dark matter halo around a galaxy and the intergalactic medium. The density profile of the halo surrounding a galaxy is much larger than in empty space. I suspect this arises from the fact that there is much, much more empty space in the universe than there is filled space. Additionally, baryonic matter is only a very small fraction of all matter in space. Thus, when considering the local environment around a galaxy it makes sense that the density of dark matter would be overwhelmingly larger.
+
+
+
+
+
+
+\end{document}
+

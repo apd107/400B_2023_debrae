@@ -284,5 +284,6 @@ ax2.set_xlim(-500,500)
 label_size = 12
 matplotlib.rcParams['xtick.labelsize'] = label_size 
 matplotlib.rcParams['ytick.labelsize'] = label_size
+
 # %%
 
